@@ -12,11 +12,20 @@ let leftPaddle, rightPaddle, ball;
 let leftScore=0, rightScore=0
 
 let startgame=false
+
+
+function preload() {
+bgm = loadSound("assets/bgm.mp3");
+scoreblip = loadSound("assets/score.mp3")
+boopsound = loadSound("assets/boop.mp3")
+}
+
 /* ----------------- Setup & Draw ----------------- */
 function setup() {
   createCanvas(640, 360);
   noStroke();
-  
+  bgm.loop()
+
 
   
   // paddles: x, y, w, h
@@ -31,6 +40,7 @@ function setup() {
 function keyPressed(){
   if (keyCode === 32){
     startgame=true;
+    bgm.pause()
   }
 }
 
@@ -44,6 +54,7 @@ function draw(){
    text('PONG THE GAME',width/2,height/2)
     textSize(20)
    text('press space to start',width/2, height/3*2)
+    
   }
   else{
   
@@ -183,11 +194,13 @@ class Ball {
     if (this.pos.x + this.r < 0) { 
       /* right player scores - add to their score */ 
       rightScore ++;
+      scoreblip.play()
       this.reset();
     }
     if (this.pos.x - this.r > width) { 
       /* left player scores - add to their score */ 
       leftScore ++;
+      scoreblip.play()
       this.reset();
       
     }
@@ -202,6 +215,7 @@ class Ball {
     const withinX = this.pos.x + this.r > paddle.pos.x && this.pos.x - this.r < paddle.pos.x + paddle.w;
     
     if (withinX && withinY) {
+      boopsound.play()
       // push ball out so it doesn't get stuck
       if (this.vel.x < 0) {
         this.pos.x = paddle.pos.x + paddle.w + this.r;
