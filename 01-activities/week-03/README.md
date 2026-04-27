@@ -6,10 +6,10 @@
 -transforming shape sizes and positions
 
 ### 💻 Final Sketch
-![screenshot](readme-assets/week03b_output.png)
+![screenshot](readme-assets/week03b-output.png)
 
 ### 🎥 Demo Video
-[Watch on Google Drive](<https://drive.google.com/your-link-here](https://drive.google.com/file/d/1VzPnGUmmqzJTcfKtHC74Thth_69zogYh/view?usp=sharing>)
+[Watch on Google Drive](<https://drive.google.com/file/d/1VzPnGUmmqzJTcfKtHC74Thth_69zogYh/view?usp=sharing>)
 
 ### 🧩 Key Code Snippet
 ```js
