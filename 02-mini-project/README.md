@@ -11,8 +11,8 @@ Each paddle and ball is a class with its own properties and methods.
 - Pregame state music, collision sfx and score sfx using `loadSound()`
 
 ### 📸 Screenshots
-![Gameplay](readme-assets/gameplay.png)
-![Game Over Screen](readme-assets/gameover.png)
+![Gameplay](readme-assets/gameplay_capture.png)
+![Game Over Screen](readme-assets/gameover_capture.png)
 
 ### 🎥 Demo Video
 [Watch on Google Drive](<https://drive.google.com/file/d/1V7Fj9CoRWMVfx-TB5fVv_5jtPiAkrd71/view?usp=sharing)
