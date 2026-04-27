@@ -6,7 +6,7 @@
 - Trigger booleans inside classes to indicate collisions
 
 ### 💻 Final Sketch
-![screenshot](readme-assets/week05_output.png)
+![screenshot](readme-assets/week05-output.png)
 
 ### 🎥 Demo Video
 [Watch on Google Drive](<https://drive.google.com/file/d/1LfA734SEhau_YGY4IXoKuya43tY3BT8j/view?usp=sharing>)
